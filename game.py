@@ -21,6 +21,7 @@ print("You chose:", user_choice)
 
 
 #VALIDATIONS
+#Change user input to lowercase in order to check input validity
 
 validChoice = user_choice.lower()
 
@@ -29,6 +30,7 @@ if validChoice not in ["rock", "paper", "scissors"]:
     quit()
 
 #COMPUTER CHOICE
+#Randomly generate the computer's choice
 
 import random
 
@@ -40,6 +42,8 @@ print("The computer chose:", computer_choice)
 
 
 #DETERMINE THE WINNER
+#Rock trumps scissors, Paper trumps rock, Scissors trumps paper
+#Same choice results in a tie
 
 win = "tie"
 
@@ -71,7 +75,7 @@ else:
 
 
 #FINAL RESULTS
-
+#Show final results to user
 
 print("-------------------")
 if win == "tie":
