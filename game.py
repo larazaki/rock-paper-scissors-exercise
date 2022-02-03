@@ -9,7 +9,9 @@
 
 #WELCOME MESSAGE
 
+print("-------------------")
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("-------------------")
 
 # ASK FOR USER INPUT
 
@@ -22,7 +24,7 @@ print("You chose:", user_choice)
 
 validChoice = user_choice.lower()
 
-if validChoice != ("rock" or "paper" or "scissors"):
+if validChoice not in ["rock", "paper", "scissors"]:
     print("The choice you entered wasn't valid, sorry!")
     quit()
 
@@ -39,6 +41,31 @@ print("The computer chose:", computer_choice)
 
 #DETERMINE THE WINNER
 
+win = "tie"
+
+if validChoice == computer_choice:
+    print("It's a tie!")
+elif validChoice == "rock":
+    if computer_choice == "scissors":
+        print("Rock crushes scissors! You win!")
+        win = "win"
+    else:
+        print("Paper covers rock! You lose!")
+        win = "loss"
+elif validChoice == "paper":
+    if computer_choice == "rock":
+        print("Paper covers rock! You win!")
+        win = "win"
+    else:
+        print("Scissors cut paper! You lose!")
+        win = "loss"
+else:
+    if computer_choice == "paper":
+        print("Scissors cut paper! You win!")
+        win = "win"
+    else:
+        print("Rock crushes scissors! You lose!")
+        win = "loss"
 
 
 
@@ -46,4 +73,13 @@ print("The computer chose:", computer_choice)
 #FINAL RESULTS
 
 
+print("-------------------")
+if win == "tie":
+    print("It was a tie!")
+elif win == "win":
+    print("You won. Congratulations!")
+else:
+    print("Oh, the computer won. It's ok!")
+print("-------------------")
+print("Thanks for playing. Please play again!")
 
