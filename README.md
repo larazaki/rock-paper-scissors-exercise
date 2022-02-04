@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 
-A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md).
+
 
 ## Setup
 
