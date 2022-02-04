@@ -1,4 +1,4 @@
-# rps-starter
+# Rock Paper Scissors Game
 
 A Starter Repository for the [Rock Paper Scissors Exercise](https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md).
 
@@ -29,3 +29,13 @@ Run the rock paper scissors game and add your player name in place of "John Doe"
 ```sh
 PLAYER_NAME="John Doe" python game.py
 ```
+
+## Instructions
+
+The game works just as any traditional rock-paper-scissors game. Once you make your selection, the rules are as follows:
+1. Rock beats Scissors
+2. Paper beats Rock
+3. Scissors beats Paper
+4. Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
+
+Good luck!
