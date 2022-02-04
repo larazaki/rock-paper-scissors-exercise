@@ -29,11 +29,3 @@ Run the rock paper scissors game and add your player name in place of "John Doe"
 ```sh
 PLAYER_NAME="John Doe" python game.py
 ```
-
-## Testing
-
-Run tests:
-
-```sh
-pytest
-```
