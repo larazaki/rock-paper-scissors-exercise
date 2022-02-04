@@ -6,11 +6,17 @@
 # ... https://github.com/prof-rossetti/intro-to-python/blob/main/exercises/rock-paper-scissors/README.md
 #
 
+#SET PLAYER NAME (FURTHER EXPLORATION)
+
+import os
+
+player_name = os.getenv("PLAYER_NAME", default="Player One")
+
 
 #WELCOME MESSAGE
 
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("Welcome", player_name, "to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 # ASK FOR USER INPUT
